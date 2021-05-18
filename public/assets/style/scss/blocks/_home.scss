@@ -1,0 +1,127 @@
+section.home {
+  width: 100%;
+  min-height: 600px;
+  height: calc(100vh - 0px);
+  background-image: url(../../image/home-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  .home__filter {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    min-height: 600px;
+    height: calc(100vh - 0px);
+    background-color: #00000059;
+    z-index: 1;
+  }
+
+  .container {
+    z-index: 2;
+  }
+
+  .home__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .home__subtitle {
+      font-size: 24px;
+      font-weight: 900;
+      color: #fcff00;
+    }
+
+    .home__title {
+      max-width: 650px;
+      margin-top: 15px;
+      font-size: 47px;
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    .home__btn {
+      margin-top: 43px;
+      padding: 19px 75px;
+      background-color: #ff5441;
+      color: #fff;
+      box-shadow: 0px 0px 38px 0px #d44232;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: 900;
+      transition: 0.3s;
+
+      &:hover {
+        box-shadow: 0px 0px 38px 10px #e95e4e;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  section.home {
+    .home__filter {
+      top: 0px;
+    }
+
+    .home__content {
+      .home__subtitle {
+        font-size: 17px;
+      }
+
+      .home__title {
+        max-width: 380px;
+        margin-top: 15px;
+        font-size: 30px;
+      }
+
+      .home__btn {
+        margin-top: 23px;
+        padding: 16px 65px;
+        box-shadow: 0px 0px 38px 0px #d44232;
+        font-size: 16px;
+
+        &:hover {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  section.home {
+    .home__filter {
+      top: 0px;
+    }
+
+    .home__content {
+      .home__subtitle {
+        font-size: 17px;
+      }
+
+      .home__title {
+        max-width: 380px;
+        margin-top: 15px;
+        font-size: 30px;
+      }
+
+      .home__btn {
+        margin-top: 23px;
+        padding: 16px 65px;
+        box-shadow: 0px 0px 38px 0px #d44232;
+        font-size: 16px;
+
+        &:hover {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// Base style
+@import "./base/base";
+
+// Blocks
+@import "./blocks/preloader";
+@import "./blocks/header";
+@import "./blocks/home";
+@import "./blocks/menu";
+@import "./blocks/about";
+@import "./blocks/contacts";
+@import "./blocks/footer";
+@import "./blocks/popup";
+@import "./blocks/tab";
+@import "./blocks/error-404";
+@import "./admin-blocks/login";
+@import "./admin-blocks/admin-add-food";
+@import "./admin-blocks/admin-orders";
+@import "./admin-blocks/admin-add-category";

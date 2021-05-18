@@ -1,0 +1,107 @@
+section.contacts {
+  .contacts__title {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 48px;
+    font-weight: 900;
+    color: #1f1f1f;
+  }
+
+  .contacts__map #map {
+    width: 500px;
+    height: 370px;
+    border-radius: 13px;
+    overflow: hidden;
+  }
+
+  .contacts__content {
+    margin-top: 95px;
+    display: flex;
+    align-items: center;
+
+    .contacts__address-address {
+      margin-left: 30px;
+      .contacts__address-title {
+        margin-top: 40px;
+        font-size: 18px;
+        font-weight: 900;
+      }
+
+      .contacts__address-sub {
+        margin-top: 20px;
+      }
+
+      .contacts__address-social {
+        margin-top: 20px;
+        display: flex;
+        a {
+          background-color: #000;
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:not(:first-child) {
+            margin-left: 20px;
+          }
+        }
+        img {
+          max-width: 20px;
+          &:not(:first-child) {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  section.contacts {
+    .contacts__title {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 38px;
+      font-weight: 900;
+      color: #1f1f1f;
+    }
+
+    .contacts__map #map {
+      width: 300px;
+      height: 300px;
+    }
+
+    .contacts__content {
+      margin-top: 35px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .contacts__address-address {
+        margin-left: 0px;
+        max-width: 310px;
+
+        .contacts__address-social {
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          a {
+            width: 33px;
+            height: 33px;
+            &:not(:first-child) {
+              margin-left: 20px;
+            }
+          }
+          img {
+            max-width: 16px;
+            &:not(:first-child) {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

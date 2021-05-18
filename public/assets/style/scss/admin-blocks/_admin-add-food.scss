@@ -1,0 +1,98 @@
+section.add-food {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .add-food__title {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .add-food__form {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        max-width: 300px;
+
+        .add-food__file-inp {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        input, .add-food__category {
+            background-color: #d1d1d1;
+            min-width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 40px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            &:not(:first-child) {
+                margin-top: 7px;
+            }
+        }
+
+        button {
+            width: 130px;
+            height: 40px;
+            margin-top: 20px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            background-color: #1771F1;
+            color: #fff;
+        }
+    }
+}
+
+
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.inputfile + label {
+    max-width: 100%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-color: #ff5441;
+    border-radius: 10px;
+}
+
+.inputfile-1 + label:hover {
+    background-color: #1771F1;
+}
